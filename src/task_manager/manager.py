@@ -4,11 +4,7 @@ class TaskManager:
         self.next_id = 1
 
     def add_task(self, description):
-        task = {
-            "id": self.next_id,
-            "description": description,
-            "done": False
-        }
+        task = {"id": self.next_id, "description": description, "done": False}
         self.tasks.append(task)
         self.next_id += 1
         return task
